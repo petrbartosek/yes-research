@@ -1,0 +1,49 @@
+.about {
+    min-height: 90vh;
+    margin: 0 auto;
+    padding: 30px 7% 50px 7%;
+    color: #999;
+}
+.about-container{
+    display: block;
+    margin: 0 auto 60px auto;
+}
+.about-container p{
+    margin: 10px 0;
+    line-height: 1.4em;
+    text-align: left;
+}
+.about-container h3{
+    margin: 50px 0 20px 0;
+    text-align: left;
+}
+.about-container a{
+    color: var(--highlight-color);
+    text-decoration: underline;
+}
+.about-container img{
+    display: block;
+    margin: 50px auto;
+    max-width: 110px;
+}
+.about-thank{
+    text-align: center;
+    display: block;
+    margin: 50px auto;
+    font-size: 1em;
+    line-height: 1.4em;
+    font-style: italic;
+}
+@media screen and (min-width: 992px){
+    .about {
+        margin: 0 auto;
+        padding: 30px 22% 100px 22%;
+    }
+    .about-container p{
+        text-align: justify;
+    }
+    .about-thank{
+        line-height: 1.5em;
+        font-size: 1.1em;
+    }
+}

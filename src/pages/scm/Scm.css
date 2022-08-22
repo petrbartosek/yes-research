@@ -1,0 +1,64 @@
+.scm{
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto 40px auto;
+    padding: 80px 80px 60px 80px;
+    color: #999;
+    background-color: rgba(255, 255, 255, 0.02);
+    border-radius: 5px;
+    max-width: 80vw;
+}
+.scm h2{
+    font-size: 2em;
+}
+.circleContainer{
+    display: flex;
+}
+.scm .description {
+    margin: 20px;
+    text-align: justify;
+}
+.circle1{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: pink;
+    margin: 30px auto;
+}
+.circle1 img{
+    width: 100%;
+    height: 100%;
+}
+
+.scm .robotGif{
+    max-width: 12vw;
+    display: block;
+    margin: 30px auto;
+}
+.scmTextcontainer{
+    display:flex;
+    flex-direction: row;
+}
+.scm .scmList{
+    padding: 20px 10px 20px 100px;
+    display: block;
+    min-width: 25vw;
+    line-height: 2em;
+}
+.scm .scmList i{
+    color: var(--highlight-color);
+    margin: 10px;
+}
+
+.scm .scmContainer .scmDescription{
+    padding: 50px 30px;
+    line-height: 1.7em;
+    text-align: justify;
+
+}
+
+.scm button{
+    max-width: 400px;
+    margin: 20px auto;
+}

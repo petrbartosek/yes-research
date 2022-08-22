@@ -1,0 +1,51 @@
+.navbar {
+    min-height: 15vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 30px 0 30px;
+}
+.navbar .logo{
+    margin: 0 auto 0 0;
+    animation: logoIn 6s ease-in;
+}
+.navbar .fa-navicon{
+    color: rgba(255,255,255,0.8);
+    font-size: 1.5em;
+    margin: 0px;
+    animation: logoIn 8s ease-in;
+    cursor: pointer;
+
+    position: absolute;
+    right: 30px;
+    top: 30px;
+}
+
+.navbar  .fa-navicon:hover{
+    color: white;
+}
+
+@keyframes logoIn {
+    from { opacity: 0%; }
+    to { opacity: 100%; }
+}
+
+
+
+/*Desktop*/
+@media screen and (min-width: 992px){
+    .navbar{
+        min-height: 12vh;
+        flex-direction: row;
+        padding: 25px 35px 25px 40px;
+    }
+    .navbar .logo{
+        margin: 0 auto 0 0;
+    }
+    .navbar .fa-navicon{
+        margin: 0 20px 0 40px;
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+}

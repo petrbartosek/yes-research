@@ -1,0 +1,137 @@
+.products {
+    min-height: 90vh;
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px 40px 20px;
+    color: #aaa;
+}
+.products .products-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px auto 0px auto;
+}
+.products .product{
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5em;
+    align-items: center;
+    padding: 5px 15px 20px 15px;
+    border: 0.3px solid rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.08);
+    margin: 0 0 15px 0;
+}
+.products .product:hover{
+    border: 0.3px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.btn-products{
+    display: block;
+    width: 100%;
+    color:#f4f4f4;
+    font-size: 1.3em;
+    font-weight: 200;
+    padding: 20px 40px 20px 20px;
+    margin: 10px 0 10px 0;
+    text-align: center;
+    border: 0px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+.products h4 {
+    margin: 30px 0 10px 0;
+}
+.products .tech-logo{
+    display: block;
+    margin: 25px auto 40px auto;
+    width: 40%;
+    filter: brightness(0) invert(0.6);
+}
+.products .product-description i {
+    margin: 7px 10px 7px 5px;
+    color: var(--highlight-color);
+}
+.products .product-description p {
+    margin: 10px 0 0 0;
+    line-height: 1.6em;
+    text-align: left;
+    font-size: 0.9em;
+}
+.products .product-description li {
+    font-size: 0.9em;
+    line-height: 1.4em;
+}
+.products .free-demo{
+    display: block;
+    margin: 50px auto;
+}
+.products .products-thank{
+    width: 90%;
+    text-align: center;
+    font-size: 0.9em;
+    line-height: 1.5em;
+    margin: 40px 150px 0 150px;
+    font-style: italic;
+}
+.products .products-thank img{
+    max-width: 110px;
+    margin: 0 auto 20px auto;
+}
+
+/*Desktop*/
+@media screen and (min-width: 992px){
+    .products {
+        padding: 30px 20px 80px 20px;
+    }
+    .products .products-container{
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 50px auto 0px auto;
+    }
+    .products .product{
+        max-width: 30%;
+        padding: 35px 40px 50px 40px;
+        margin: 0;
+        background-color: rgba(255, 255, 255, 0.02);
+    }
+    .btn-products{  
+        font-size: 1.3em;
+        margin: 10px 0 25px 0;
+        text-align: center;
+    }
+    .products h4 {
+        margin: 40px 0 5px 0;
+    }
+    .products .tech-logo{
+        display: block;
+        margin: 50px auto 50px auto;
+        width: 35%;
+    }
+    .products .product-description i {
+        margin: 7px 10px 5px 5px;
+    }
+    .products .product-description p {
+        margin: 0 0 25px 0px;
+        line-height: 1.7em;
+        text-align: left;
+        font-size: 1em;
+    }
+    .products .product-description li {
+        font-size: 0.9em;
+    }
+    .products .products-thank{
+        width: 50%;
+        margin: 60px 150px 0 150px;
+        font-size: 1.1em;
+        line-height: 1.5em;
+    }
+    .products .products-thank img{
+        margin: 20px;
+    }
+
+}

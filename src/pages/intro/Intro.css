@@ -1,0 +1,60 @@
+.intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.intro .robotGif{
+    max-width: 60vw;
+    filter: invert(20%);
+    margin: 10px 0;
+}
+
+.intro .btn{
+    animation: btnIn 0.7s ease-in;
+    margin: 20px 0;
+}
+
+.refArrow{
+    filter: invert(90%);
+    max-height: 18px;
+    margin: 20px 8px;
+
+    animation-delay: 5s;
+    animation: bump 1.7s ease-in infinite;
+    animation-direction: alternate;
+}
+
+@keyframes btnIn {
+    from { opacity: 0%; }
+    to { opacity: 100%; }
+}
+
+@keyframes bump {
+    0% {
+         opacity: 0%;
+         transform: translateY(-40%);
+        }
+    50% {
+         opacity: 80%;
+         transform: translateY(20%);
+        }
+    100% {
+         opacity: 80%;
+         transform: translateY(0%);
+        }
+}
+
+
+/*Desktop*/
+@media screen and (min-width: 992px){
+    .intro .robotGif{
+        max-width: 23vw;
+        margin: 0;
+    }
+    .refArrow{
+        margin: 50px 8px;
+    }
+
+}

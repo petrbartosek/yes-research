@@ -1,0 +1,58 @@
+.menu{
+    font-size: 0.8em;
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 10px 0;
+    color: aliceblue;
+    font-weight: 200;
+    animation: menuIn 0.3s ease-out;
+    width: 100%;
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.08);
+}
+.menu li{
+    margin: 10px;
+}
+.menu a{
+    padding: 8px 15px;
+    transition: all 0.3s ease;
+}
+.menu a:hover, .menu a.active{
+    background-color: rgba(255,255,255,0.1);
+}
+.lang{
+    cursor: pointer;
+    padding: 0 0 0 15px;
+}
+
+@keyframes menuIn {
+    from {
+        transform: translateY(-200%);
+        opacity: 0%;
+    }
+    
+    to {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+
+/*Desktop*/
+@media screen and (min-width: 992px){
+    .menu{
+        flex-direction: row;
+        align-items: center;
+        margin: 0;
+        width: auto;
+        padding: 0;
+        background-color: transparent;
+    }
+    .menu li{
+        margin: 0;
+    }
+    .lang{
+        padding: 0;
+        border-bottom: 0.5px solid aliceblue;
+    }
+}

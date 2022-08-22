@@ -1,0 +1,147 @@
+.references{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 4% 40px 4%;
+    
+    background-color: #f4f4f4;
+    color: var(--bg-gradient3);
+}
+.references .page-title{
+    color: var(--bg-gradient3);
+    margin: 50px auto;
+}
+
+.reference-highlights{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 10px 0 10px;
+    margin: 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #ccc;
+    background-color: #fff;
+    text-align: center;
+}
+.highlights-tile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    min-height: 100px;
+    padding: 30px 25px;
+    margin: 0 0 10px 0;
+    text-align: center;
+    background-color:lightsteelblue;
+    border-radius: 3px;
+}
+.highlights-tile .counter{
+    min-width: 110px;
+    color: var(--bg-gradient3);
+    font-size: 3em;
+    margin: 0 0 10px 0;
+    font-weight: 200;
+}
+.highlights-tile .counter-description{
+    color: var(--bg-gradient1);
+    line-height: 1.4em;
+}
+.references .single-reference{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 15px 40px 15px;
+    margin: 5px 0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #ccc;
+    background-color: #fff;
+    text-align: center;
+}
+.references .client-logo{
+    max-width: 120px;
+    margin: 20px 20px;
+}
+.references .reference-client-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.references .refTitle{
+    color: var(--bg-gradient3);
+    font-weight: 300;
+}
+.references .refAnswer{
+    color: var(--highlight-color);
+    margin: 16px 0;
+    font-size: 0.7em;
+}
+.reference-thank{
+    text-align: center;
+    font-size: 1em;
+    line-height: 1.4em;
+    margin: 20px 40px 0 40px;
+    font-style: italic;
+}
+.references .reference-thank img{
+    max-width: 110px;
+    margin: 20px;
+}
+
+
+/*Desktop*/
+@media screen and (min-width: 992px){
+    .references{
+        padding: 50px 20% 100px 20%;
+    }
+    .reference-highlights{
+        flex-direction: row;
+        padding: 30px 100px 30px 50px;
+        margin: 15px 0;
+        text-align: left;
+    }
+    .highlights-tile{
+        flex-direction: column;
+        width: 30%;
+        min-height: 240px;
+        padding: 40px;  
+        margin: 0;
+    }
+    .highlights-tile .counter{
+        font-size: 5em;
+        margin: 0 0 10px 0;
+    
+    }
+    .highlights-tile .counter-description{
+        line-height: 1.4em;
+    }
+    
+    .references .single-reference{
+        flex-direction: row;
+        padding: 40px 100px 40px 50px;
+        margin: 15px 0;
+        border-radius: 5px;
+        box-shadow: 2px 2px 3px #ccc;
+        background-color: #fff;
+        text-align: left;
+    }
+    .references .client-logo{
+        max-height: 200px;
+        margin: 0 60px 0 30px;
+    }
+    .reference-thank{
+        font-size: 1.1em;
+        line-height: 1.5em;
+        margin: 70px 150px 0 150px;
+    }
+    .references .refAnswer{
+        margin: 8px 0;
+        font-size: 0.9em;
+    }
+    .reference-highlights{
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 40px 30px;
+    }
+}
